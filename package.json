@@ -1,0 +1,20 @@
+{
+  "name": "hot-reload",
+  "version": "0.0.1",
+  "description": "Test for hot loading html files",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/supervisor -k -e html -i .git/,node_modules/ -- src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.17.2",
+    "express": "4.15.4",
+    "http": "0.0.0",
+    "morgan": "1.8.2",
+    "path": "0.12.7",
+    "reload": "2.2.2"
+  }
+}
