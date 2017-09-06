@@ -12,6 +12,7 @@ var publicDir = path.join(__dirname, 'public');
 app.set('port', process.env.PORT || 5000);
 
 app.use(logger('dev'));
+app.use(express.static('src/public'));
 app.use(bodyParser.json());
 
 app.get('/', function(req, resp){
